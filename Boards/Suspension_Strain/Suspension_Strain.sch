@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 3
 Title "Template Board"
 Date "2019-08-22"
 Rev "1"
@@ -375,7 +375,7 @@ F 3 "" H 6400 6050 50  0001 C CNN
 	1    6400 6050
 	1    0    0    -1  
 $EndComp
-Text Notes 6500 6000 0    50   ~ 0
+Text Notes 6500 5800 0    50   ~ 0
 5V
 Text Notes 6250 7300 1    50   ~ 0
 5V Indicator
@@ -775,9 +775,6 @@ F 3 "" H 800 850 50  0001 C CNN
 	1    800  850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 1300 1150 1300
-Connection ~ 1150 1300
 $Comp
 L Suspension_Strain-rescue:C_0.1uF-formula-Suspension_Strain-rescue C2
 U 1 1 5D58E34B
@@ -988,15 +985,15 @@ $EndComp
 $Comp
 L Formula:MM_F_RA_08 J102
 U 1 1 5DDA2419
-P 7850 3550
-F 0 "J102" H 7908 4097 60  0000 C CNN
-F 1 "MM_F_RA_08" H 7908 3991 60  0000 C CNN
-F 2 "footprints:micromatch_female_ra_8" H 7750 3850 60  0001 C CNN
-F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F338070%7FG1%7Fpdf%7FEnglish%7FENG_CD_338070_G1.pdf%7F338070-8" H 7850 3950 60  0001 C CNN
-F 4 "TE" H 7950 4950 60  0001 C CNN "MFN"
-F 5 "338070-8" H 8050 5050 60  0001 C CNN "MPN"
-F 6 "http://www.te.com/usa-en/product-338070-8.html" H 7950 4050 60  0001 C CNN "PurchasingLink"
-	1    7850 3550
+P 8450 3600
+F 0 "J102" H 8508 4147 60  0000 C CNN
+F 1 "MM_F_RA_08" H 8508 4041 60  0000 C CNN
+F 2 "footprints:micromatch_female_ra_8" H 8350 3900 60  0001 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F338070%7FG1%7Fpdf%7FEnglish%7FENG_CD_338070_G1.pdf%7F338070-8" H 8450 4000 60  0001 C CNN
+F 4 "TE" H 8550 5000 60  0001 C CNN "MFN"
+F 5 "338070-8" H 8650 5100 60  0001 C CNN "MPN"
+F 6 "http://www.te.com/usa-en/product-338070-8.html" H 8550 4100 60  0001 C CNN "PurchasingLink"
+	1    8450 3600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1023,74 +1020,10 @@ Wire Wire Line
 Connection ~ 10700 1900
 Wire Wire Line
 	10700 1900 10850 1900
-$Comp
-L power:GND #PWR0115
-U 1 1 5DE72063
-P 6950 5000
-F 0 "#PWR0115" H 6950 4750 50  0001 C CNN
-F 1 "GND" H 6955 4827 50  0000 C CNN
-F 2 "" H 6950 5000 50  0001 C CNN
-F 3 "" H 6950 5000 50  0001 C CNN
-	1    6950 5000
-	1    0    0    -1  
-$EndComp
-Text Label 3650 3300 0    50   ~ 0
-sg_to_atmega_adc_2
-Text Label 3650 3400 0    50   ~ 0
-sg_to_atmega_adc_3
-Text Label 6050 1400 2    50   ~ 0
-sg_to_atmega_adc_4
 Text Label 3650 1700 0    50   ~ 0
 sg_to_atmega_adc_4
-Text Label 3650 1200 0    50   ~ 0
-sg_to_atmega_adc_5
 Text Label 3650 1500 0    50   ~ 0
-mux_out_to_atmega_adc_6
-Text Label 7350 4900 2    50   ~ 0
-mux_enable_input
-Wire Wire Line
-	7250 5000 7350 5000
-Connection ~ 7250 5000
-Wire Wire Line
-	7250 5100 7250 5000
-Wire Wire Line
-	7350 5100 7250 5100
-Text Label 7350 5300 2    50   ~ 0
-mux_out_to_atmega_adc_6
-Text Label 6050 1600 2    50   ~ 0
-sg_to_atmega_adc_5
-Wire Wire Line
-	6950 5000 7250 5000
-$Comp
-L Formula:74HC4051 U102
-U 1 1 5DE6B705
-P 7800 4950
-F 0 "U102" H 7775 5525 50  0000 C CNN
-F 1 "74HC4051" H 7775 5434 50  0000 C CNN
-F 2 "footprints:TSSOP-16-OEM" H 7200 5400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT4051_Q100.pdf" H 7200 5400 50  0001 C CNN
-F 4 "DK" H 8100 5700 50  0001 C CNN "MFN"
-F 5 "1727-1033-1-ND" H 7900 5500 50  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/nexperia-usa-inc/74HC4051PW-Q10011/1727-1033-1-ND/3749040" H 8000 5600 50  0001 C CNN "PurchasingLink"
-	1    7800 4950
-	1    0    0    -1  
-$EndComp
-Text Label 8200 4600 0    50   ~ 0
-sg_to_mux_Y0
-Text Label 8200 4700 0    50   ~ 0
-sg_to_mux_Y1
-Text Label 8200 4800 0    50   ~ 0
-sg_to_mux_Y2
-Text Label 8200 4900 0    50   ~ 0
-sg_to_mux_Y3
-Text Label 8200 5000 0    50   ~ 0
-sg_to_mux_Y4
-Text Label 8200 5100 0    50   ~ 0
-sg_to_mux_Y5
-Text Label 8200 5200 0    50   ~ 0
-sg_to_mux_Y6
-Text Label 8200 5300 0    50   ~ 0
-sg_to_mux_Y7
+sg_to_atmega_adc_6
 Text Label 3650 2300 0    50   ~ 0
 mux_enable_input
 Text Label 3650 2400 0    50   ~ 0
@@ -1098,12 +1031,6 @@ mux_select_S0
 Text Label 3650 2500 0    50   ~ 0
 mux_select_S1
 Text Label 3650 2600 0    50   ~ 0
-mux_select_S2
-Text Label 7350 4600 2    50   ~ 0
-mux_select_S0
-Text Label 7350 4700 2    50   ~ 0
-mux_select_S1
-Text Label 7350 4800 2    50   ~ 0
 mux_select_S2
 Wire Wire Line
 	1300 6100 1550 6100
@@ -1124,74 +1051,12 @@ $EndComp
 Connection ~ 1550 6100
 Wire Wire Line
 	1550 6100 1950 6100
-Text Label 6050 3500 2    50   ~ 0
-sg_to_mux_Y7
-Text Label 6050 3300 2    50   ~ 0
-sg_to_mux_Y6
-Text Label 6050 3100 2    50   ~ 0
-sg_to_mux_Y5
-Text Label 6050 2900 2    50   ~ 0
-sg_to_mux_Y4
-Text Label 6050 2700 2    50   ~ 0
-sg_to_mux_Y3
-Text Label 6050 2500 2    50   ~ 0
-sg_to_mux_Y2
-Text Label 6050 2300 2    50   ~ 0
-sg_to_mux_Y1
-Text Label 6050 2100 2    50   ~ 0
-sg_to_mux_Y0
-Text Label 6050 1000 2    50   ~ 0
-sg_to_atmega_adc_2
-Text Label 6050 1200 2    50   ~ 0
-sg_to_atmega_adc_3
 Wire Wire Line
 	3650 3700 4450 3700
 Wire Wire Line
 	3650 3800 4750 3800
 Wire Wire Line
 	3650 3900 4350 3900
-$Sheet
-S 6050 850  1550 3350
-U 5DD64290
-F0 "strain_gauge_cluster" 50
-F1 "strain_gauge_circuit_file5DD6428F.sch" 50
-F2 "r_strain_1_+" O R 7600 1400 50 
-F3 "r_strain_1_-" I R 7600 1500 50 
-F4 "strain_gauge_vout_1" O L 6050 1000 50 
-F5 "r_strain_2_+" O R 7600 1600 50 
-F6 "r_strain_2_-" I R 7600 1700 50 
-F7 "strain_gauge_vout_2" O L 6050 1200 50 
-F8 "r_strain_3_+" O R 7600 1800 50 
-F9 "r_strain_3_-" I R 7600 1900 50 
-F10 "strain_gauge_vout_3" O L 6050 1400 50 
-F11 "r_strain_4_+" O R 7600 2000 50 
-F12 "r_strain_4_-" I R 7600 2100 50 
-F13 "strain_gauge_vout_4" O L 6050 1600 50 
-F14 "r_strain_5_+" O R 7600 2200 50 
-F15 "r_strain_5_-" I R 7600 2300 50 
-F16 "strain_gauge_vout_5" O L 6050 2100 50 
-F17 "r_strain_6_+" O R 7600 2400 50 
-F18 "r_strain_6_-" I R 7600 2500 50 
-F19 "strain_gauge_vout_6" O L 6050 2300 50 
-F20 "r_strain_7_+" O R 7600 2600 50 
-F21 "r_strain_7_-" I R 7600 2700 50 
-F22 "strain_gauge_vout_7" O L 6050 2500 50 
-F23 "r_strain_8_+" O R 7600 2800 50 
-F24 "r_strain_8_-" I R 7600 2900 50 
-F25 "strain_gauge_vout_8" O L 6050 2700 50 
-F26 "r_strain_9_+" O R 7600 3250 50 
-F27 "r_strain_9_-" I R 7600 3350 50 
-F28 "strain_gauge_vout_9" O L 6050 2900 50 
-F29 "r_strain_10_+" O R 7600 3450 50 
-F30 "r_strain_10_-" I R 7600 3550 50 
-F31 "strain_gauge_vout_10" O L 6050 3100 50 
-F32 "r_strain_11_+" O R 7600 3650 50 
-F33 "r_strain_11_-" I R 7600 3750 50 
-F34 "strain_gauge_vout_11" O L 6050 3300 50 
-F35 "r_strain_12_+" O R 7600 3850 50 
-F36 "r_strain_12_-" I R 7600 3950 50 
-F37 "strain_gauge_vout_12" O L 6050 3500 50 
-$EndSheet
 Text Label 8050 1000 2    50   ~ 0
 12V
 $Comp
@@ -1211,38 +1076,6 @@ Text Label 8200 1200 2    50   ~ 0
 CAN_+
 Text Label 8200 1300 2    50   ~ 0
 CAN_-
-Wire Wire Line
-	7600 1400 8200 1400
-Wire Wire Line
-	7600 1500 8200 1500
-Wire Wire Line
-	7600 1600 8200 1600
-Wire Wire Line
-	7600 1700 8200 1700
-Wire Wire Line
-	7600 1800 8200 1800
-Wire Wire Line
-	7600 1900 8200 1900
-Wire Wire Line
-	7600 2000 8200 2000
-Wire Wire Line
-	7600 2100 8200 2100
-Wire Wire Line
-	7600 2200 8200 2200
-Wire Wire Line
-	7600 2300 8200 2300
-Wire Wire Line
-	7600 2400 8200 2400
-Wire Wire Line
-	7600 2500 8200 2500
-Wire Wire Line
-	7600 2600 8200 2600
-Wire Wire Line
-	7600 2700 8200 2700
-Wire Wire Line
-	7600 2800 8200 2800
-Wire Wire Line
-	7600 2900 8200 2900
 $Comp
 L Formula:LED_0805 D104
 U 1 1 5DFBA915
@@ -1331,45 +1164,6 @@ Wire Wire Line
 	3650 1100 4000 1100
 Wire Wire Line
 	3650 700  3650 1000
-$Comp
-L power:VCC #PWR0116
-U 1 1 5DE70FEF
-P 6200 5200
-F 0 "#PWR0116" H 6200 5050 50  0001 C CNN
-F 1 "VCC" H 6218 5327 50  0000 L CNN
-F 2 "" H 6200 5200 50  0001 C CNN
-F 3 "" H 6200 5200 50  0001 C CNN
-	1    6200 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Formula:C_0.1uF C104
-U 1 1 5DFE3335
-P 6200 5350
-F 0 "C104" H 6315 5396 50  0000 L CNN
-F 1 "C_0.1uF" H 6315 5305 50  0000 L CNN
-F 2 "footprints:C_0805_OEM" H 6238 5200 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 6225 5450 50  0001 C CNN
-F 4 "DK" H 6200 5350 60  0001 C CNN "MFN"
-F 5 "478-3352-1-ND" H 6200 5350 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 6625 5850 60  0001 C CNN "PurchasingLink"
-	1    6200 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5DFE3F49
-P 6200 5500
-F 0 "#PWR0118" H 6200 5250 50  0001 C CNN
-F 1 "GND" H 6205 5327 50  0000 C CNN
-F 2 "" H 6200 5500 50  0001 C CNN
-F 3 "" H 6200 5500 50  0001 C CNN
-	1    6200 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 5200 7350 5200
-Connection ~ 6200 5200
 NoConn ~ 3650 1300
 NoConn ~ 3650 2800
 NoConn ~ 3650 2900
@@ -1380,4 +1174,478 @@ NoConn ~ 3650 1400
 NoConn ~ 3650 2000
 Wire Wire Line
 	8050 1000 8200 1000
+$Sheet
+S 7400 4650 1250 350 
+U 5E928F45
+F0 "Strain Gauge Circuit 1" 50
+F1 "strain_gauge_circuit.sch" 50
+F2 "r_strain_+" O R 8650 4750 50 
+F3 "r_strain_-" I R 8650 4900 50 
+F4 "strain_gauge_vout" O L 7400 4850 50 
+$EndSheet
+Text Label 6700 1600 2    50   ~ 0
+mux_select_S2
+Text Label 6700 1500 2    50   ~ 0
+mux_select_S1
+Text Label 6700 1400 2    50   ~ 0
+mux_select_S0
+$Comp
+L Formula:74HC4051 U102
+U 1 1 5DE6B705
+P 7150 1750
+F 0 "U102" H 7125 2325 50  0000 C CNN
+F 1 "74HC4051" H 7125 2234 50  0000 C CNN
+F 2 "footprints:TSSOP-16-OEM" H 6550 2200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT4051_Q100.pdf" H 6550 2200 50  0001 C CNN
+F 4 "DK" H 7450 2500 50  0001 C CNN "MFN"
+F 5 "1727-1033-1-ND" H 7250 2300 50  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/nexperia-usa-inc/74HC4051PW-Q10011/1727-1033-1-ND/3749040" H 7350 2400 50  0001 C CNN "PurchasingLink"
+	1    7150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1800 6600 1800
+Text Label 6700 2100 2    50   ~ 0
+mux_1_out_to_sg
+Wire Wire Line
+	6700 1900 6600 1900
+Wire Wire Line
+	6600 1900 6600 1800
+Connection ~ 6600 1800
+Wire Wire Line
+	6600 1800 6700 1800
+Text Label 6700 1700 2    50   ~ 0
+mux_enable_input
+$Comp
+L power:GND #PWR0115
+U 1 1 5DE72063
+P 6300 1800
+F 0 "#PWR0115" H 6300 1550 50  0001 C CNN
+F 1 "GND" H 6305 1627 50  0000 C CNN
+F 2 "" H 6300 1800 50  0001 C CNN
+F 3 "" H 6300 1800 50  0001 C CNN
+	1    6300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5DFE3F49
+P 5550 2300
+F 0 "#PWR0118" H 5550 2050 50  0001 C CNN
+F 1 "GND" H 5555 2127 50  0000 C CNN
+F 2 "" H 5550 2300 50  0001 C CNN
+F 3 "" H 5550 2300 50  0001 C CNN
+	1    5550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Formula:C_0.1uF C104
+U 1 1 5DFE3335
+P 5550 2150
+F 0 "C104" H 5665 2196 50  0000 L CNN
+F 1 "C_0.1uF" H 5665 2105 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 5588 2000 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5575 2250 50  0001 C CNN
+F 4 "DK" H 5550 2150 60  0001 C CNN "MFN"
+F 5 "478-3352-1-ND" H 5550 2150 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 5975 2650 60  0001 C CNN "PurchasingLink"
+	1    5550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0116
+U 1 1 5DE70FEF
+P 5550 2000
+F 0 "#PWR0116" H 5550 1850 50  0001 C CNN
+F 1 "VCC" H 5568 2127 50  0000 L CNN
+F 2 "" H 5550 2000 50  0001 C CNN
+F 3 "" H 5550 2000 50  0001 C CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 2000
+Wire Wire Line
+	5550 2000 6700 2000
+$Comp
+L power:GND #PWR0122
+U 1 1 5E986841
+P 8100 1650
+F 0 "#PWR0122" H 8100 1400 50  0001 C CNN
+F 1 "GND" H 7950 1600 50  0000 C CNN
+F 2 "" H 8100 1650 50  0001 C CNN
+F 3 "" H 8100 1650 50  0001 C CNN
+	1    8100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1650 8200 1650
+Wire Wire Line
+	8200 1650 8200 1700
+$Comp
+L power:GND #PWR0123
+U 1 1 5E98B875
+P 8100 1450
+F 0 "#PWR0123" H 8100 1200 50  0001 C CNN
+F 1 "GND" H 7950 1400 50  0000 C CNN
+F 2 "" H 8100 1450 50  0001 C CNN
+F 3 "" H 8100 1450 50  0001 C CNN
+	1    8100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5E98EB8E
+P 8100 1850
+F 0 "#PWR0124" H 8100 1600 50  0001 C CNN
+F 1 "GND" H 7950 1800 50  0000 C CNN
+F 2 "" H 8100 1850 50  0001 C CNN
+F 3 "" H 8100 1850 50  0001 C CNN
+	1    8100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1850 8200 1850
+Wire Wire Line
+	8100 1450 8200 1450
+Wire Wire Line
+	8200 1450 8200 1500
+Wire Wire Line
+	8200 1850 8200 1900
+$Comp
+L power:GND #PWR0125
+U 1 1 5E9989EF
+P 8100 2050
+F 0 "#PWR0125" H 8100 1800 50  0001 C CNN
+F 1 "GND" H 7950 2000 50  0000 C CNN
+F 2 "" H 8100 2050 50  0001 C CNN
+F 3 "" H 8100 2050 50  0001 C CNN
+	1    8100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2050 8200 2050
+Wire Wire Line
+	8200 2050 8200 2100
+$Comp
+L power:GND #PWR0126
+U 1 1 5E99F3DD
+P 8100 2250
+F 0 "#PWR0126" H 8100 2000 50  0001 C CNN
+F 1 "GND" H 7950 2200 50  0000 C CNN
+F 2 "" H 8100 2250 50  0001 C CNN
+F 3 "" H 8100 2250 50  0001 C CNN
+	1    8100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2250 8200 2250
+$Comp
+L power:GND #PWR0127
+U 1 1 5E9A31F6
+P 8100 2450
+F 0 "#PWR0127" H 8100 2200 50  0001 C CNN
+F 1 "GND" H 7950 2400 50  0000 C CNN
+F 2 "" H 8100 2450 50  0001 C CNN
+F 3 "" H 8100 2450 50  0001 C CNN
+	1    8100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2450 8200 2450
+Wire Wire Line
+	8200 2450 8200 2500
+$Comp
+L power:GND #PWR0128
+U 1 1 5E9A9E83
+P 8100 2650
+F 0 "#PWR0128" H 8100 2400 50  0001 C CNN
+F 1 "GND" H 7950 2600 50  0000 C CNN
+F 2 "" H 8100 2650 50  0001 C CNN
+F 3 "" H 8100 2650 50  0001 C CNN
+	1    8100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2650 8200 2650
+Wire Wire Line
+	8200 1400 7550 1400
+Wire Wire Line
+	7550 1500 7850 1500
+Wire Wire Line
+	7850 1500 7850 1600
+Wire Wire Line
+	7850 1600 8200 1600
+Wire Wire Line
+	8200 1800 7800 1800
+Wire Wire Line
+	7800 1800 7800 1600
+Wire Wire Line
+	7800 1600 7550 1600
+Wire Wire Line
+	8200 2000 7750 2000
+Wire Wire Line
+	7750 2000 7750 1700
+Wire Wire Line
+	7750 1700 7550 1700
+Wire Wire Line
+	8200 2200 7700 2200
+Wire Wire Line
+	7700 2200 7700 1800
+Wire Wire Line
+	7700 1800 7550 1800
+Wire Wire Line
+	8200 2250 8200 2300
+Wire Wire Line
+	8200 2650 8200 2700
+Wire Wire Line
+	8200 2400 7650 2400
+Wire Wire Line
+	7650 2400 7650 1900
+Wire Wire Line
+	7650 1900 7550 1900
+Wire Wire Line
+	8200 2600 7600 2600
+Wire Wire Line
+	7600 2600 7600 2000
+Wire Wire Line
+	7600 2000 7550 2000
+Wire Wire Line
+	8200 2800 7550 2800
+Wire Wire Line
+	7550 2800 7550 2100
+$Comp
+L power:GND #PWR0129
+U 1 1 5E9EA397
+P 8100 2850
+F 0 "#PWR0129" H 8100 2600 50  0001 C CNN
+F 1 "GND" H 7950 2800 50  0000 C CNN
+F 2 "" H 8100 2850 50  0001 C CNN
+F 3 "" H 8100 2850 50  0001 C CNN
+	1    8100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2850 8200 2850
+Wire Wire Line
+	8200 2850 8200 2900
+$Comp
+L power:GND #PWR0130
+U 1 1 5E9F7986
+P 8100 3350
+F 0 "#PWR0130" H 8100 3100 50  0001 C CNN
+F 1 "GND" H 7950 3300 50  0000 C CNN
+F 2 "" H 8100 3350 50  0001 C CNN
+F 3 "" H 8100 3350 50  0001 C CNN
+	1    8100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3350 8200 3350
+$Comp
+L power:GND #PWR0131
+U 1 1 5E9FC748
+P 8100 3550
+F 0 "#PWR0131" H 8100 3300 50  0001 C CNN
+F 1 "GND" H 7950 3500 50  0000 C CNN
+F 2 "" H 8100 3550 50  0001 C CNN
+F 3 "" H 8100 3550 50  0001 C CNN
+	1    8100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3550 8200 3550
+$Comp
+L power:GND #PWR0132
+U 1 1 5EA05D00
+P 8100 3750
+F 0 "#PWR0132" H 8100 3500 50  0001 C CNN
+F 1 "GND" H 7950 3700 50  0000 C CNN
+F 2 "" H 8100 3750 50  0001 C CNN
+F 3 "" H 8100 3750 50  0001 C CNN
+	1    8100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3750 8200 3750
+$Comp
+L power:GND #PWR0133
+U 1 1 5EA0A95F
+P 8100 3950
+F 0 "#PWR0133" H 8100 3700 50  0001 C CNN
+F 1 "GND" H 7950 3900 50  0000 C CNN
+F 2 "" H 8100 3950 50  0001 C CNN
+F 3 "" H 8100 3950 50  0001 C CNN
+	1    8100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3950 8200 3950
+Wire Wire Line
+	8200 3350 8200 3400
+Wire Wire Line
+	8200 3550 8200 3600
+Wire Wire Line
+	8200 3750 8200 3800
+Wire Wire Line
+	8200 3950 8200 4000
+Text Label 6700 3500 2    50   ~ 0
+mux_select_S2
+Text Label 6700 3400 2    50   ~ 0
+mux_select_S1
+Text Label 6700 3300 2    50   ~ 0
+mux_select_S0
+$Comp
+L Formula:74HC4051 U103
+U 1 1 5EA27A9A
+P 7150 3650
+F 0 "U103" H 7125 4225 50  0000 C CNN
+F 1 "74HC4051" H 7125 4134 50  0000 C CNN
+F 2 "footprints:TSSOP-16-OEM" H 6550 4100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT4051_Q100.pdf" H 6550 4100 50  0001 C CNN
+F 4 "DK" H 7450 4400 50  0001 C CNN "MFN"
+F 5 "1727-1033-1-ND" H 7250 4200 50  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/nexperia-usa-inc/74HC4051PW-Q10011/1727-1033-1-ND/3749040" H 7350 4300 50  0001 C CNN "PurchasingLink"
+	1    7150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3700 6600 3700
+Text Label 6700 4000 2    50   ~ 0
+mux_2_out_to_sg
+Wire Wire Line
+	6700 3800 6600 3800
+Wire Wire Line
+	6600 3800 6600 3700
+Connection ~ 6600 3700
+Wire Wire Line
+	6600 3700 6700 3700
+Text Label 6700 3600 2    50   ~ 0
+mux_enable_input
+$Comp
+L power:GND #PWR0134
+U 1 1 5EA27AAB
+P 6300 3700
+F 0 "#PWR0134" H 6300 3450 50  0001 C CNN
+F 1 "GND" H 6305 3527 50  0000 C CNN
+F 2 "" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5EA27AB5
+P 5550 4200
+F 0 "#PWR0135" H 5550 3950 50  0001 C CNN
+F 1 "GND" H 5555 4027 50  0000 C CNN
+F 2 "" H 5550 4200 50  0001 C CNN
+F 3 "" H 5550 4200 50  0001 C CNN
+	1    5550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Formula:C_0.1uF C105
+U 1 1 5EA27AC2
+P 5550 4050
+F 0 "C105" H 5665 4096 50  0000 L CNN
+F 1 "C_0.1uF" H 5665 4005 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 5588 3900 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5575 4150 50  0001 C CNN
+F 4 "DK" H 5550 4050 60  0001 C CNN "MFN"
+F 5 "478-3352-1-ND" H 5550 4050 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 5975 4550 60  0001 C CNN "PurchasingLink"
+	1    5550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0136
+U 1 1 5EA27ACC
+P 5550 3900
+F 0 "#PWR0136" H 5550 3750 50  0001 C CNN
+F 1 "VCC" H 5568 4027 50  0000 L CNN
+F 2 "" H 5550 3900 50  0001 C CNN
+F 3 "" H 5550 3900 50  0001 C CNN
+	1    5550 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 3900
+Wire Wire Line
+	5550 3900 6700 3900
+Wire Wire Line
+	7550 3300 8200 3300
+Wire Wire Line
+	8200 3500 7850 3500
+Wire Wire Line
+	7850 3500 7850 3400
+Wire Wire Line
+	7850 3400 7550 3400
+Wire Wire Line
+	8200 3700 7800 3700
+Wire Wire Line
+	7800 3700 7800 3500
+Wire Wire Line
+	7800 3500 7550 3500
+Wire Wire Line
+	8200 3900 7750 3900
+Wire Wire Line
+	7750 3900 7750 3600
+Wire Wire Line
+	7750 3600 7550 3600
+NoConn ~ 7550 3700
+NoConn ~ 7550 3800
+NoConn ~ 7550 3900
+NoConn ~ 7550 4000
+$Comp
+L power:GND #PWR0137
+U 1 1 5EA68434
+P 8800 4900
+F 0 "#PWR0137" H 8800 4650 50  0001 C CNN
+F 1 "GND" H 8805 4727 50  0000 C CNN
+F 2 "" H 8800 4900 50  0001 C CNN
+F 3 "" H 8800 4900 50  0001 C CNN
+	1    8800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4900 8800 4900
+Text Label 8650 4750 0    50   ~ 0
+mux_1_out_to_sg
+$Sheet
+S 7400 5300 1250 350 
+U 5EA71C62
+F0 "Strain Gauge Circuit 2" 50
+F1 "strain_gauge_circuit.sch" 50
+F2 "r_strain_+" O R 8650 5400 50 
+F3 "r_strain_-" I R 8650 5550 50 
+F4 "strain_gauge_vout" O L 7400 5500 50 
+$EndSheet
+$Comp
+L power:GND #PWR0138
+U 1 1 5EA71C68
+P 8800 5550
+F 0 "#PWR0138" H 8800 5300 50  0001 C CNN
+F 1 "GND" H 8805 5377 50  0000 C CNN
+F 2 "" H 8800 5550 50  0001 C CNN
+F 3 "" H 8800 5550 50  0001 C CNN
+	1    8800 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5550 8800 5550
+Text Label 8650 5400 0    50   ~ 0
+mux_2_out_to_sg
+Text Label 7400 5500 2    50   ~ 0
+sg_to_atmega_adc_6
+Text Label 7400 4850 2    50   ~ 0
+sg_to_atmega_adc_4
+Text Notes 7200 4450 0    89   ~ 0
+Differential Amplifiers
+Text Notes 6000 750  0    89   ~ 0
+Strain Gauge Inputs & MUXs
+NoConn ~ 3650 3300
+NoConn ~ 3650 3400
+NoConn ~ 3650 1200
+Wire Wire Line
+	1450 1300 1150 1300
+Connection ~ 1150 1300
 $EndSCHEMATC
